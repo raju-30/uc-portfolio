@@ -24,14 +24,17 @@
   <div class="navbar">
     <div class="logo">UC.</div>
 
-    <div class="menu-toggle" onclick="toggleMenu()">
-      <i class="fa fa-bars"></i>
+    <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
     <div class="nav-links" id="navLinks">
       <a href="#">Home</a>
       <a href="#projects">Projects</a>
       <a href="#journey">Journey</a>
+      <a href="#resume">Resume</a>
       <a href="#connect">Connect</a>
     </div>
   </div>
@@ -44,7 +47,7 @@
 
     <div class="btn-group">
       <a href="#projects" class="btn">Let’s Get Started →</a>
-      <a href="#resume" class="btn">
+      <a href="resume.html" class="btn">
         <i class="fa fa-file"></i> View Resume
       </a>
     </div>
@@ -201,44 +204,21 @@
       <a href="certifications.html" class="btn">More Certifications →</a>
     </div>
   </section>
-  <section id="resume" class="resume-section">
-
-    <!-- Heading -->
-    <h3 class="resume-title">
-      Resume
-    </h3>
-
-    <!-- Container -->
-    <div class="resume-container">
-
-      <!-- Resume Frame -->
-      <div class="resume-frame">
-<iframe
- src="https://drive.google.com/file/d/1cw3hLx8YZX4WN5CAtRlNMiGIK6ltNuhA/preview"
-width="100%"
-  height="100%"
-  style="border:none;">
-</iframe>
+  <!-- RESUME CTA -->
+  <section id="resume" class="resume-cta-section">
+    <div class="resume-cta-inner">
+      <div class="resume-cta-icon">
+        <i class="fas fa-file-alt"></i>
       </div>
-
-      <!-- ACTION BUTTONS -->
-      <div class="resume-actions">
-
-        <!-- Open -->
-        <a href="https://drive.google.com/file/d/1cw3hLx8YZX4WN5CAtRlNMiGIK6ltNuhA/view?usp=drive_link" target="_blank"
-          class="btn">
-          <i class="fas fa-external-link-alt"></i> Open Full
-        </a>
-
-        <!-- Download -->
-        <a href="https://drive.google.com/uc?export=download&id=1cw3hLx8YZX4WN5CAtRlNMiGIK6ltNuhA" class="btn">
-          <i class="fas fa-download"></i> Download
-        </a>
-
+      <div class="resume-cta-text">
+       
+        <h2>My <span>Resume</span></h2>
+        <p>Take a look at my education, skills, and experience — all in one place.</p>
       </div>
-
+      <a href="resume.html" class="btn resume-cta-btn">
+        <i class="fas fa-eye"></i> View Resume
+      </a>
     </div>
-
   </section>
 
   <!-- CONNECT -->

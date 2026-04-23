@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume – Uma Chandra</title>
+  <meta name="description" content="View and download Uma Chandra's resume – skills, education, and experience.">
+
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* ---- Resume Page Specific ---- */
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .resume-page-hero {
+      padding-top: 120px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+
+    .resume-page-hero small {
+      color: #FF2E88;
+      letter-spacing: 3px;
+      font-size: 13px;
+    }
+
+    .resume-page-hero h1 {
+      font-size: 42px;
+      margin-top: 8px;
+    }
+
+    .resume-page-hero h1 span {
+      color: #FF2E88;
+    }
+
+    .resume-page-hero p {
+      color: #aaa;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .resume-page-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 5% 80px;
+    }
+
+    .resume-page-container {
+      width: 100%;
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 46, 136, 0.25);
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(255, 46, 136, 0.2);
+      padding: 25px;
+      transition: 0.4s;
+    }
+
+    .resume-page-container:hover {
+      box-shadow: 0 0 60px rgba(255, 46, 136, 0.35);
+    }
+
+    .resume-page-frame {
+      width: 100%;
+      aspect-ratio: 210 / 297;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 46, 136, 0.3);
+    }
+
+    .resume-page-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .resume-page-actions {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #aaa;
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 30px;
+      transition: 0.3s;
+    }
+
+    .back-link:hover {
+      color: #FF2E88;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <div class="navbar">
+    <div class="logo">UC.</div>
+
+    <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#journey">Journey</a>
+      <a href="resume.html" class="active">Resume</a>
+      <a href="index.html#connect">Connect</a>
+    </div>
+  </div>
+
+  <!-- PAGE HEADING -->
+  <div class="resume-page-hero">
+
+    <h1>My <span>Resume</span></h1>
+    <p>Education, skills, and experience — all in one place.</p>
+  </div>
+
+  <!-- RESUME CONTENT -->
+  <div class="resume-page-wrapper">
+
+    <a href="index.html" class="back-link">
+      <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+
+    <div class="resume-page-container">
+
+      <!-- Embedded Resume -->
+      <div class="resume-page-frame">
+        <iframe
+          src="https://drive.google.com/file/d/1cw3hLx8YZX4WN5CAtRlNMiGIK6ltNuhA/preview"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="resume-page-actions">
+
+        <a href="https://drive.google.com/file/d/1cw3hLx8YZX4WN5CAtRlNMiGIK6ltNuhA/view?usp=drive_link"
+          target="_blank" class="btn">
+          <i class="fas fa-external-link-alt"></i> Open Full
+        </a>
+
+        <a href="https://drive.google.com/uc?export=download&id=1cw3hLx8YZX4WN5CAtRlNMiGIK6ltNuhA"
+          class="btn">
+          <i class="fas fa-download"></i> Download
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <h3>Uma Chandra</h3>
+    <p>Passionate about Web Development</p>
+
+    <div class="footer-socials">
+      <a href="https://github.com/umachandra-30" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/uma-chandra-chakravaram" target="_blank" title="LinkedIn"><i
+          class="fab fa-linkedin"></i></a>
+    </div>
+
+    <div class="footer-email">
+      <span>umachandra0539@gmail.com</span>
+      <button onclick="copyEmail()" class="copy-btn" title="Copy Email"><i class="fas fa-copy"></i></button>
+      <span id="copy-msg" style="display:none; color:#FF2E88; font-size:14px; margin-left:5px;">Copied!</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+      document.getElementById("menuToggle").classList.toggle("active");
+    }
+
+    function copyEmail() {
+      navigator.clipboard.writeText("umachandra0539@gmail.com").then(() => {
+        const msg = document.getElementById("copy-msg");
+        msg.style.display = "inline";
+        setTimeout(() => { msg.style.display = "none"; }, 2000);
+      });
+    }
+  </script>
+
+</body>
+
+</html>

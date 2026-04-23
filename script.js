@@ -10,6 +10,7 @@ new Typed(".typing", {
 /* MOBILE MENU */
 function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("active");
+  document.getElementById("menuToggle").classList.toggle("active");
 }
 
 /* COPY EMAIL */
