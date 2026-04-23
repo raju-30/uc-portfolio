@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Uma Chandra - Projects</title>
+<link rel="icon" type="image/png" href="Uc.png">
+
+<!-- Typed JS -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!-- Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="navbar">
+  <div class="logo">UC.</div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <i class="fa fa-bars"></i>
+  </div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#journey">Journey</a>
+    <a href="index.html#connect">Connect</a>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-title">
+    <small>PORTFOLIO</small>
+    <h2>All <span>Projects</span></h2>
+  </div>
+
+  <div class="projects">
+
+    <!-- Project 1 -->
+    <div class="card">
+      <h3>Food Landing Page</h3>
+      <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+      </div>
+      <p>Basic frontend project to understand UI, animations, and structure</p>
+      <div class="btn-group">
+        <a href="https://ucsr-project1.vercel.app/" target="_blank" class="btn" title="Website"><i class="fas fa-globe"></i></a>
+        <a href="https://github.com/umachandra-30/SCT_WD_1" target="_blank" class="btn" title="Code"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="card">
+      <h3>MediTrack</h3>
+      <div class="tags">
+        <span class="tag">React</span>
+        <span class="tag">Express</span>
+        <span class="tag">MongoDB</span>
+      </div>
+      <p>Patient record management system with appointment booking</p>
+      <div class="btn-group">
+        <a href="https://github.com/umachandra-30/MediTrack" target="_blank" class="btn" title="Code"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="card">
+      <h3>Weather App</h3>
+      <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+      </div>
+      <p>Uses OpenWeather API to display real-time weather</p>
+      <div class="btn-group">
+        <a href="https://ucweather.vercel.app/" target="_blank" class="btn" title="Website"><i class="fas fa-globe"></i></a>
+        <a href="https://github.com/umachandra-30/weather" target="_blank" class="btn" title="Code"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="card">
+      <h3>GitQuest</h3>
+      <div class="tags">
+        <span class="tag">Python</span>
+      </div>
+      <p>RAG-based system using OpenAI API for Git query answering</p>
+      <div class="btn-group">
+        <a href="https://github.com/umachandra-30/git-quest" target="_blank" class="btn" title="Code"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

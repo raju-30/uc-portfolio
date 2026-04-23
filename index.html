@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Uma Chandra Portfolio</title>
+
+
+  <!-- Typed JS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <div class="navbar">
+    <div class="logo">UC.</div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#connect">Connect</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Hi,</h2>
+    <h1>I am <span>Uma Chandra</span></h1>
+    <div class="typing"></div>
+
+    <div class="btn-group">
+      <a href="#projects" class="btn">Let’s Get Started →</a>
+      <a href="#resume" class="btn">
+        <i class="fa fa-file"></i> View Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-title">
+      <small>PORTFOLIO</small>
+      <h2>Featured <span>Projects</span></h2>
+    </div>
+
+    <div class="projects">
+
+      <!-- Project 1 -->
+      <div class="card">
+        <h3>Food Landing Page</h3>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <p>Basic frontend project to understand UI, animations, and structure</p>
+        <div class="btn-group">
+          <a href="https://ucsr-project1.vercel.app/" target="_blank" class="btn" title="Website"><i
+              class="fas fa-globe"></i></a>
+          <a href="https://github.com/umachandra-30/SCT_WD_1" target="_blank" class="btn" title="Code"><i
+              class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card">
+        <h3>MediTrack</h3>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">Express</span>
+          <span class="tag">MongoDB</span>
+        </div>
+        <p>Patient record management system with appointment booking</p>
+        <div class="btn-group">
+          <a href="https://github.com/umachandra-30/MediTrack" target="_blank" class="btn" title="Code"><i
+              class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card">
+        <h3>Weather App</h3>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <p>Uses OpenWeather API to display real-time weather</p>
+        <div class="btn-group">
+          <a href="https://ucweather.vercel.app/" target="_blank" class="btn" title="Website"><i
+              class="fas fa-globe"></i></a>
+          <a href="https://github.com/umachandra-30/weather" target="_blank" class="btn" title="Code"><i
+              class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="card">
+        <h3>GitQuest</h3>
+        <div class="tags">
+          <span class="tag">Python</span>
+        </div>
+        <p>RAG-based system using OpenAI API for Git query answering</p>
+        <div class="btn-group">
+          <a href="https://github.com/umachandra-30/git-quest" target="_blank" class="btn" title="Code"><i
+              class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 40px;">
+      <a href="project.html" class="btn">More Projects →</a>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section id="journey">
+    <div class="section-title">
+      <small>ABOUT</small>
+      <h2>My <span>Journey</span></h2>
+    </div>
+
+    <p class="journey-desc">
+      Tech-enthusiastic B.Tech student passionate about software development, web technologies, and AI.
+    </p>
+
+    <div class="timeline">
+
+      <div class="timeline-item left">
+        <div class="timeline-box">
+          <h3>B.Tech</h3>
+          <p>VVIT (2023–Present)</p>
+          <span>CGPA: 7.9</span>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-box">
+          <h3>Intermediate</h3>
+          <p>Narayana Junior College (2021–2023)</p>
+          <span>96.1%</span>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-box">
+          <h3>SSC</h3>
+          <p>Sunshine High School (2020–2021)</p>
+          <span>100%</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SKILLS -->
+    <div class="skills">
+      <h3>Skills</h3>
+      <div>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">React</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">SQL</span>
+        <span class="tag">Git</span>
+        <span class="tag">Vercel</span>
+      </div>
+    </div>
+
+    <!-- CERTIFICATES -->
+    <h3 class="certificates-title">Certificates</h3>
+
+    <div class="certificates">
+      <img src="https://res.cloudinary.com/dbo0t5d3t/image/upload/v1776749993/NPTEL_CYBERSECURITY_fv9svt.jpg"
+        onclick="window.open('https://drive.google.com/file/d/1IKOG_dDkGDKB0P-sqmJKmAKorGW-jZpW/view')">
+
+      <img src="https://res.cloudinary.com/dbo0t5d3t/image/upload/v1776749993/AWS_CERTIFICATE_m13lxr.jpg"
+        onclick="window.open('https://drive.google.com/file/d/1PRD6dv-QUV7JCANNlcUFyU9GoyICWqBP/view')">
+
+      <img src="https://res.cloudinary.com/dbo0t5d3t/image/upload/v1776749993/L4G_njzm9s.jpg"
+        onclick="window.open('https://drive.google.com/file/d/1eaRFOyWMtStUaeTEax6FuzLc-nOHz-5L/view')">
+
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 40px;">
+      <a href="certifications.html" class="btn">More Certifications →</a>
+    </div>
+  </section>
+  <section id="resume" class="resume-section">
+
+    <!-- Heading -->
+    <h3 class="resume-title">
+      Resume
+    </h3>
+
+    <!-- Container -->
+    <div class="resume-container">
+
+      <!-- Resume Frame -->
+      <div class="resume-frame">
+
+        <iframe
+          src="https://res.cloudinary.com/dbo0t5d3t/image/upload/v1776923273/Uma_Chandra_Resume_bvwrdp.pdf#toolbar=0"
+          width="100%" height="100%" class="resume-iframe">
+        </iframe>
+
+      </div>
+
+      <!-- ACTION BUTTONS -->
+      <div class="resume-actions">
+
+        <!-- Open -->
+        <a href="https://drive.google.com/file/d/1cw3hLx8YZX4WN5CAtRlNMiGIK6ltNuhA/view?usp=drive_link" target="_blank"
+          class="btn">
+          <i class="fas fa-external-link-alt"></i> Open Full
+        </a>
+
+        <!-- Download -->
+        <a href="https://drive.google.com/uc?export=download&id=1cw3hLx8YZX4WN5CAtRlNMiGIK6ltNuhA" class="btn">
+          <i class="fas fa-download"></i> Download
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONNECT -->
+  <h3 id="connect" class="social-title">
+    Social Media
+  </h3>
+  <div class="connect">
+
+    <a href="https://github.com/umachandra-30" class="connect-card">
+      <i class="fab fa-github"></i>
+      <p>@umachandra-30</p>
+    </a>
+
+    <a href="https://www.linkedin.com/in/uma-chandra-chakravaram" class="connect-card">
+      <i class="fab fa-linkedin"></i>
+      <p>uma-chandra-chakravaram</p>
+    </a>
+
+
+    <a href="mailto:umachandra0539@gmail.com" class="connect-card">
+      <i class="fa fa-envelope"></i>
+      <p>umachandra0539@gmail.com</p>
+    </a>
+
+  </div>
+  <h3 class="coding-title">
+    Coding Profiles
+  </h3>
+
+  <div class="connect coding-profiles">
+
+    <!-- HackerRank -->
+    <a href="https://www.hackerrank.com/umachandra4821" class="connect-card">
+
+      <i class="fas fa-code"></i>
+
+      <h3>HackerRank</h3>
+
+      <p class="profile-handle">
+        umachandra4821
+      </p>
+
+    </a>
+
+    <!-- CodeChef -->
+    <a href="https://www.codechef.com/users/vvit23bq1a0539" class="connect-card">
+
+      <i class="fas fa-trophy"></i>
+
+      <h3>CodeChef</h3>
+
+      <p class="profile-handle">
+        vvit23bq1a0539
+      </p>
+
+    </a>
+
+  </div>
+  <!-- FOOTER -->
+  <footer>
+    <h3>Uma Chandra</h3>
+    <p>Passionate about Web Development</p>
+
+    <div class="footer-socials">
+      <a href="https://github.com/umachandra-30" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/uma-chandra-chakravaram" target="_blank" title="LinkedIn"><i
+          class="fab fa-linkedin"></i></a>
+    </div>
+
+    <div class="footer-email">
+      <span>umachandra0539@gmail.com</span>
+      <button onclick="copyEmail()" class="copy-btn" title="Copy Email"><i class="fas fa-copy"></i></button>
+      <span id="copy-msg" style="display:none; color:#FF2E88; font-size:14px; margin-left:5px;">Copied!</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
